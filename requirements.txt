@@ -1,2 +1,2 @@
-pyTelegramBotAPI
-flask
+pyTelegramBotAPI=4.6.0
+flask=2.1.3
