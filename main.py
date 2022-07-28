@@ -16,7 +16,7 @@ def start(message):
     bot.reply_to(message, 'Hello, {username}')
 
 
-@server.route(f"/{BOT_TOKEN}", method=["POST"])
+@server.route(f"/{BOT_TOKEN}", methods=["POST"])
 def redirect_message():
     json_string = request.get_data().decode("utf-8")
     update = telebot.types.Update.de_json(json_string)
